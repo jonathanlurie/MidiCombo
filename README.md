@@ -1,7 +1,9 @@
 MidiCombo
 =========
 
-MidiCombo is a tool for triggering action from a MIDI controller
+MidiCombo is a tool for triggering action from a MIDI controller.
+
+Mainly used for performing complicated keyboard shortcuts in complicated softwares (i.e. Adobe Lightroom).
 
 
 Depedencies:

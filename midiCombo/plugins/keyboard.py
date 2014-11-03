@@ -18,6 +18,16 @@ def typeString(s):
 
 
 # perform a combo like cmd + a or something
+# Note: the keys will be pressed at the same time
 def combo(*arg):
     k = PyKeyboard()
     k.press_keys(arg)
+
+
+# perform a combo as a sequence, meaning key after key
+# (as opposite as combo() )
+def comboSequence(*arg):
+    k = PyKeyboard()
+
+    for key in arg:
+        k.tap_key(key)
