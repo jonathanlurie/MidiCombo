@@ -65,15 +65,7 @@ class ThreadedPluginManager:
 
 				# check is number of arguments is ok with what we have
 				nbArgForPlugin = len(inspect.getargspec(self.m_fuctionObject).args)
-
 				varArgs = inspect.getargspec(self.m_fuctionObject).varargs
-
-
-				#nbVarargsForPlugin = len(varArgs)
-
-				print("VARARGS: " )
-				print( varArgs)
-
 
 				if( nbArgForPlugin != len(self.m_arguments) and (varArgs == None)):
 					raise Exception("The plugin "+ self.m_moduleName + "." + self.m_functionName + " takes " + str(nbArgForPlugin) + " arguments! ( " + str(len(self.m_arguments)) + " given)" )
