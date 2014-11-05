@@ -10,6 +10,44 @@
 4	P	plugin|keyboard|typeString|3
 5	P	plugin|keyboard|typeString|4
 
-# colors (yellow / blue )
+# color tags (yellow / blue )
 7	P	plugin|keyboard|typeString|7
 9	P	plugin|keyboard|typeString|9
+
+# arrow left and right
+8	P	plugin|keyboard|combo|arrow_left
+10	P	plugin|keyboard|combo|arrow_right
+
+
+# copy/paste settings
+11	P	plugin|keyboard|combo|cmd|shift|c
+12	P	plugin|keyboard|combo|cmd|shift|v
+
+# Enter/return key
+13	P	plugin|keyboard|combo|return
+
+# reset settings
+14	P	plugin|keyboard|combo|shift|cmd|r
+
+# cancel
+15	P	plugin|keyboard|combo|cmd|z
+
+# select the next slider
+3	P	plugin|keyboard|combo|arrow_up
+
+# select the previous slider
+6	P	plugin|keyboard|combo|arrow_down
+
+
+# increase setting value
+16	P	plugin|keyboard|combo|<
+
+# decrease setting value
+17	P	plugin|keyboard|combo|=
+
+# auto settings (press = auto all except WB, release = auto WB)
+19	P	plugin|keyboard|combo|cmd|u
+19	R	plugin|keyboard|combo|cmd|shift|u
+
+# switch before/after settings
+18	P	plugin|keyboard|combo|cmd|alt|shift|arrow_up
