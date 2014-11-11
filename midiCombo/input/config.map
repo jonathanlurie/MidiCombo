@@ -34,10 +34,10 @@
 15	P	plugin|keyboard|combo|cmd|z
 
 # select the next slider
-3	P	plugin|keyboard|combo|arrow_up
+#3	P	plugin|keyboard|combo|arrow_up
 
 # select the previous slider
-6	P	plugin|keyboard|combo|arrow_down
+#6	P	plugin|keyboard|combo|arrow_down
 
 
 # increase setting value
@@ -57,10 +57,10 @@
 3	P	plugin|keyboard|typeString|g
 
 # change display mode to DEVELOP
-6	P	plugin|keyboard|typeString|D
+6	P	plugin|keyboard|typeString|d
 
 # change display mode to Normal
-20	P	plugin|keyboard|typeString|E
+20	P	plugin|keyboard|typeString|e
 
 # change display mode to FULL SCREEN
-22	P	plugin|keyboard|typeString|D
+22	P	plugin|keyboard|typeString|f
