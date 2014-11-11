@@ -145,7 +145,7 @@ class MidiDeviceReader:
                     velocity = ev[0][2]
 
                     # exit sequence for TESTING
-                    if(keyIndex == 22):
+                    if(keyIndex == 26):
                         going = False
 
                     self._processData( timestamp, pressOrRelease, keyIndex, velocity)

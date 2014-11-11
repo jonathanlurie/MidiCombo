@@ -10,9 +10,10 @@
 4	P	plugin|keyboard|typeString|3
 5	P	plugin|keyboard|typeString|4
 
-# color tags (yellow / blue )
+# color tags (yellow / blue / red)
 7	P	plugin|keyboard|typeString|7
 9	P	plugin|keyboard|typeString|9
+24	P	plugin|keyboard|typeString|6
 
 # arrow left and right
 8	P	plugin|keyboard|combo|arrow_left
@@ -51,3 +52,15 @@
 
 # switch before/after settings
 18	P	plugin|keyboard|combo|cmd|alt|shift|arrow_up
+
+# change display mode to GRID
+3	P	plugin|keyboard|typeString|g
+
+# change display mode to DEVELOP
+6	P	plugin|keyboard|typeString|D
+
+# change display mode to Normal
+20	P	plugin|keyboard|typeString|E
+
+# change display mode to FULL SCREEN
+22	P	plugin|keyboard|typeString|D
