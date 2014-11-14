@@ -32,19 +32,27 @@ Then:
 TODO
 
 ## Side tools
-TODO
+The __ressources__ directory contains some tool to identify MIDI devices (that must be connected to you computer) and key index, within this device.
+* __inputDeviceLister.py__ uses the library PyGame to print the list of connected MIDI devices. It prints there names like __LPK25__ for an __Akai LPK25__ mini keyboard. This identifier might be useful if you want to connect several MIDI controler and use them all with MidiCombo. If you have only one controller plugged to your machine, you donnot have to bother with that, an auto detection will be performed.
+* __midiReadsMini.py__ will help you to know how are index the keys of your MIDI device. Thos index will be helpful for filling the mapping file.
 
 ## How to install MidiCombo
 TODO
 
-## How to launch
+## How to launch and use
 TODO
 
 ## A note about threads
-TODO
+Plugins are launched in independant threads. If one of them takes a while to run, you can still use the other keys. But you cannot launch several instances of the plugins at the same time (in different threads), even though they are launched using different keys.
 
 ## Depedencies
 TODO : complete that
 
 - [PyUserInputGen](https://github.com/jonathanlurie/PyUserInputGen) for keyboard emulation (examples availables in Plugins)
 - [PyGame](http://www.pygame.org/download.shtml) for reading MIDI controller inputs.
+
+## TODO
+
+* Update the ressource file midiReadsMini.py to clean it. Update the related documentation
+* Update the parameters for main.py to be able to set the mapping file and the device id (optional)
+* Adds the .sh script to launch simply the app. It also gives a hint about how to launch it.
