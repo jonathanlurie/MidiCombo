@@ -20,7 +20,7 @@ As an example, it is composed of lines like this one:
 
 As shown on the example, you can use # at the begining of the line to add a comment.
 Then:
-* '__1__' means the first key of your MIDI device. MIDI keys are index and you can know more about how is indexed this or that key by reading the section "Side Tools".
+* '__1__' means the first key of your MIDI device. MIDI keys are index and you can know more about how is indexed this or that key by reading the section [Side Tools](https://github.com/jonathanlurie/MidiCombo/blob/master/README.md#side-tools) section.
 * '__P__' means we are about to map a _key-Pressing_ behaviour. We could have used the letter 'R' to map a _key-Releasing_ behaviour.
 * '__plugin|keyboard|typeString|abc__' means several things, note we are splitting them with the Pipe ('|') character:
   1. '__plugin__' mean we are about to call a plugin. Such an expression will always start by the word 'plugin'.
