@@ -20,13 +20,13 @@ As an example, it is composed of lines like this one:
 
 As shown on the example, you can use # at the begining of the line to add a comment.
 Then:
-* '1' means the first key of your MIDI device. MIDI keys are index and you can know more about how is indexed this or that key by reading the section "Side Tools".
-* 'P' means we are about to map a _key-Pressing_ behaviour. We could have used the letter 'R' to map a _key-Releasing_ behaviour.
-* plugin|keyboard|typeString|abc means several things, note we are splitting them with the Pipe ('|') character:
-  1. 'plugin' mean we are about to call a plugin. Such an expression will always start by the word 'plugin'.
-  2. 'keyboard' is the name of the plugin we are calling, meaning __keyboard.py__ located in the __plugins__ subdirectory.
-  3. 'typeString' is a function from the file __keyboard.py__
-  4. 'abc' is a parameter needed by the function _typeString_. A function may need several parameters, if so, you must use pipes ('|') separators.
+* '__1__' means the first key of your MIDI device. MIDI keys are index and you can know more about how is indexed this or that key by reading the section "Side Tools".
+* '__P__' means we are about to map a _key-Pressing_ behaviour. We could have used the letter 'R' to map a _key-Releasing_ behaviour.
+* '__plugin|keyboard|typeString|abc__' means several things, note we are splitting them with the Pipe ('|') character:
+  1. '__plugin__' mean we are about to call a plugin. Such an expression will always start by the word 'plugin'.
+  2. '__keyboard__' is the name of the plugin we are calling, meaning __keyboard.py__ located in the __plugins__ subdirectory.
+  3. '__typeString__' is a function from the file __keyboard.py__
+  4. '__abc__' is a parameter needed by the function _typeString_. A function may need several parameters, if so, you must use pipes ('|') separators.
 
 ## Available plugins
 TODO
