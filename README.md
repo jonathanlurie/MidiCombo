@@ -23,10 +23,10 @@ Then:
 * '1' means the first key of your MIDI device. MIDI keys are index and you can know more about how is indexed this or that key by reading the section "Side Tools".
 * 'P' means we are about to map a _key-Pressing_ behaviour. We could have used the letter 'R' to map a _key-Releasing_ behaviour.
 * plugin|keyboard|typeString|abc means several things, note we are splitting them with the Pipe ('|') character:
-..1. 'plugin' mean we are about to call a plugin. Such an expression will always start by the word 'plugin'.
-..2. 'keyboard' is the name of the plugin we are calling, meaning __keyboard.py__ located in the __plugins__ subdirectory.
-..3. 'typeString' is a function from the file __keyboard.py__
-..4. 'abc' is a parameter needed by the function _typeString_. A function may need several parameters, if so, you must use pipes ('|') separators.
+  1. 'plugin' mean we are about to call a plugin. Such an expression will always start by the word 'plugin'.
+  2. 'keyboard' is the name of the plugin we are calling, meaning __keyboard.py__ located in the __plugins__ subdirectory.
+  3. 'typeString' is a function from the file __keyboard.py__
+  4. 'abc' is a parameter needed by the function _typeString_. A function may need several parameters, if so, you must use pipes ('|') separators.
 
 ## Available plugins
 TODO
