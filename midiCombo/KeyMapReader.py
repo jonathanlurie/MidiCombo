@@ -38,8 +38,15 @@ class KeyMapReader:
 						else:
 							tempMappingItem = None
 
+
 		except IOError, e:
 			print("ERROR: the file does not exist or is corrupted")
+
+
+		if(len(self.m_keyArgumentMap) == 0):
+			print("WARNING: the mapping file does not contain any instructions.")
+		else:
+			print("The mapping file contains " + str(len(self.m_keyArgumentMap)) + " instructions.")
 
 		#print(self.m_keyArgumentMap)
 

@@ -46,18 +46,24 @@ class MidiDeviceReader:
         if(deviceName is None):
             self._deviceId = pygame.midi.get_default_input_id()
         else:
+            # This might give a None (to be catched then)
             self._deviceId = self._getdeviceIdFromName(deviceName)
 
-
         try:
+
+            if(self._deviceId == None):
+                raise pygame.midi.MidiException(0)
+
             # input slection
             self._input = pygame.midi.Input( self._deviceId )
-            #self.readFlow()
-            #del self._input
-        except pygame.midi.MidiException, e:
 
-            print("ERROR: impossible to find the device named " + deviceName + "\n")
-            self._printDeviceInfo()
+        except pygame.midi.MidiException, e:
+            if(deviceName == None):
+                print("ERROR: no compatible MIDI controller was found.")
+            else:
+                print("ERROR: impossible to find the device named " + deviceName + "\n")
+                self._printDeviceInfo()
+
             #print("(" + str(e) + ")" )
             self.close()
             exit()
