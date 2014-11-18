@@ -21,6 +21,7 @@ def printInfo():
     print("You can also specify the name of a MIDI controller (optional).")
     print("\t-mapping <file>\t(mandatory)")
     print("\t-device <name>\t(optional)")
+    print("\nLearn more about MidiCombo on https://github.com/jonathanlurie/MidiCombo")
 
 
 def findArgValue(argName, mandatory=True):
