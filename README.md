@@ -29,7 +29,7 @@ Then:
   4. '__abc__' is a parameter needed by the function _typeString_. A function may need several parameters, if so, you must use pipes ('|') separators.
 
 ## Available plugins
-TODO
+See the [dedicated page](https://github.com/jonathanlurie/MidiCombo/wiki/Plugins) from the Wiki.
 
 ## Side tools
 The __ressources__ directory contains some tool to identify MIDI devices (that must be connected to you computer) and key index, within this device.
