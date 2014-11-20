@@ -40,7 +40,17 @@ The __ressources__ directory contains some tool to identify MIDI devices (that m
 TODO
 
 ## How to launch and use
-TODO
+To launch MidiCombo, you have two choices, both are in terminal:
+* Manually:
+  1. Open a terminal
+  2. Change directory to the _midiCombo_ directory
+  3. type ```python main.py -mapping input/config.map``` or any other mapping file
+
+* With the script
+  1. double click (for launching) on __MidiCombo.sh__
+  2. Tune it as you wish to match your configuration
+
+Available options
 
 ## A note about threads
 Plugins are launched in independant threads. If one of them takes a while to run, you can still use the other keys. But you cannot launch several instances of the plugins at the same time (in different threads), even though they are launched using different keys.
@@ -55,4 +65,4 @@ TODO : complete that
 
 * Update the ressource file midiReadsMini.py to clean it. Update the related documentation
 * Update the parameters for main.py to be able to set the mapping file and the device id (optional)
-* Adds the .sh script to launch simply the app. It also gives a hint about how to launch it.
+
