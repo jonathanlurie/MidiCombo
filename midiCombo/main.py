@@ -27,6 +27,11 @@ def printInfo():
 def findArgValue(argName, mandatory=True):
     argValue = None
 
+    # checking if help was asked or if no arg
+    if(len(sys.argv)==1 or "-help" in sys.argv[1]):
+        printInfo()
+        exit()
+
     try:
         argNameIndex = sys.argv.index(argName)
         argValue = sys.argv[argNameIndex + 1]
