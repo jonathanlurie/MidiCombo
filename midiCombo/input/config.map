@@ -46,9 +46,11 @@
 # decrease setting value
 17	P	plugin|keyboard|combo|=
 
-# auto settings (press = auto all except WB, release = auto WB)
-19	P	plugin|keyboard|combo|cmd|u
-19	R	plugin|keyboard|combo|cmd|shift|u
+# auto settings (not WB)
+19	R	plugin|keyboard|combo|cmd|u
+
+# auto white balance
+21	R	plugin|keyboard|combo|cmd|shift|u
 
 # switch before/after settings
 18	P	plugin|keyboard|combo|cmd|alt|shift|arrow_up
