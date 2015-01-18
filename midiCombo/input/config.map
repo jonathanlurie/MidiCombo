@@ -66,3 +66,5 @@
 
 # change display mode to FULL SCREEN
 22	P	plugin|keyboard|typeString|f
+
+23	P	plugin|keyboard|typeCurrentDate

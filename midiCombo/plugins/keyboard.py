@@ -31,3 +31,8 @@ def comboSequence(*arg):
 
     for key in arg:
         k.tap_key(key)
+
+
+def typeCurrentDate():
+    import datetime
+    typeString(datetime.datetime.now().strftime("%Y_%m_%d"))
