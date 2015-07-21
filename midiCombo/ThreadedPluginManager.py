@@ -85,13 +85,13 @@ class ThreadedPluginManager:
 
 
 	# run the plugin (already loaded by loadPlugin)
-	def runPlugin(self):
+	def runPlugin(self, velocity):
 		# only if it is valid
 		if(self.m_isValid):
 
 			# if the thread for this plugin is not created or not alive anymore
 			if(self.m_threadObject == None or not self.m_threadObject.isAlive()):
-				self.m_threadObject = threading.Thread(None , self.m_fuctionObject , args = self.m_arguments )
+				self.m_threadObject = threading.Thread(None , self.m_fuctionObject , args = self.m_arguments + (velocity,) )
 				self.m_threadObject.start()
 
 			else:

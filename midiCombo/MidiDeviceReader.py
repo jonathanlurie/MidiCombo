@@ -171,7 +171,7 @@ class MidiDeviceReader:
         key = str(keyIndex) + pressOrRelease
 
         # relay the instruction to the command interpreter
-        self._commanInterpreter.executeCommandFromKey(key)
+        self._commanInterpreter.executeCommandFromKey(key, velocity)
 
     # PRIVATE
     # calls at the end, to delete the input object

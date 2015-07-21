@@ -44,13 +44,13 @@ class CommandInterpreter:
 	# to work.
 	# Returns True if the plugin method was launched
 	# Returns False if not (meaning it has to be considered as a keyboard shortcut)
-	def _launchPluginMethod(self, pluginString):
+	def _launchPluginMethod(self, pluginString, velocity):
 		# does the pluginString exist in the plugin map?
 		if(pluginString in self.m_pluginMap.keys()):
 			# was it instantiated?
 			if(self.m_pluginMap[pluginString].isValid()):
 				# launch it!
-				self.m_pluginMap[pluginString].runPlugin()
+				self.m_pluginMap[pluginString].runPlugin(velocity)
 
 				return True
 			else:
@@ -61,7 +61,7 @@ class CommandInterpreter:
 
 
 	# given a key k, execute a command
-	def executeCommandFromKey(self, k):
+	def executeCommandFromKey(self, k, velocity):
 		print("key: " + k)
 
 		# is this element in the map?
@@ -70,8 +70,9 @@ class CommandInterpreter:
 			print("argument: " + argument)
 
 			# if argument does not refer to a plugin, launch the keyboard shortcut mode
-			if(not self._launchPluginMethod(argument)):
-				self.executeVirtualKeyboardCommand( argument)
+			self._launchPluginMethod(argument, velocity)
+			#if(not self._launchPluginMethod(argument)):
+			#	self.executeVirtualKeyboardCommand( argument)
 
 		else:
 			print("WARNING: the command " + k + " is not defined in the .setting file.\n")
